@@ -1,0 +1,16 @@
+<svg width="200" height="50" viewBox="0 0 280 64" xmlns="http://www.w3.org/2000/svg">
+    <rect width="64" height="64" rx="14" fill="#fff"/>
+    <rect x="29" y="36" width="6" height="16" rx="3" fill="#1a1a2e"/>
+    <line x1="32" y1="44" x2="16" y2="33" stroke="#1a1a2e" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="32" y1="40" x2="48" y2="30" stroke="#1a1a2e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="11" cy="27" r="8" fill="#3ab57a"/>
+    <circle cx="22" cy="21" r="6" fill="#2a8a5a"/>
+    <circle cx="53" cy="23" r="7" fill="#3ab57a"/>
+    <circle cx="42" cy="17" r="6" fill="#2a8a5a"/>
+    <circle cx="32" cy="18" r="10" fill="#f4a533"/>
+    <circle cx="32" cy="18" r="5" fill="#f9c46b"/>
+    <circle cx="21" cy="38" r="2.5" fill="#854f0b"/>
+    <circle cx="43" cy="35" r="2.5" fill="#854f0b"/>
+    <text x="78" y="34" font-family="Georgia, serif" font-size="22" font-weight="500" fill="#1a1a2e" letter-spacing="0.3">Savanna</text>
+    <text x="78" y="54" font-family="Georgia, serif" font-size="22" font-weight="500" fill="#f4a533" letter-spacing="0.3">Labs</text>
+</svg>
