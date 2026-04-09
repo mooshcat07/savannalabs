@@ -4,12 +4,12 @@ import Navigation from './_components/navigation'
 export default function EntryLayout({ children }: { children: ReactNode }) {
   return (
     <main className='relative w-full min-h-screen'>      
-      <div className='relative px-[10%]'>
+      <div className='relative'>
         <Navigation />
-        <section className=''>
-          {children}
-        </section>
       </div>
+      <section className=''>
+        {children}
+      </section>
     </main>
   )
 }

@@ -7,14 +7,14 @@ import Card from './card'
 
 export default function Services() {
     const services = [
-        { no: "01", title: "Web development", desc: "Fast, modern websites and web apps built with Next.js — optimised for search engines, performance and conversions.", tags: ["Next.js", "React", "Tailwind", "Supabase" ], icon: <Monitor size={20} /> },
-        { no: "02", title: "Mobile apps", desc: "Cross-platform iOS and Android apps using React Native and Expo — one codebase, two stores, full native feel.", tags: ["React Native", "Expo", "Typescript" ], icon: <SmartphoneIcon size={20} /> },
-        { no: "03", title: "APIs & backends", desc: "Scalable REST and real-time APIs built on Node.js and Supabase — secure, documented and ready to integrate.", tags: ["Node.js", "REST", "Real-Time", "Auth" ], icon: <PlugIcon size={20} /> },
-        { no: "04", title: "Database design", desc: "Well-structured relational and real-time databases using Supabase and PostgreSQL — built to scale with your business.", tags: ["MongodB", "Supabase", "PostgreSQL", "Schema design" ], icon: <DatabaseIcon size={20} /> },
+        { no: "01", title: "Web development", desc: "Fast, modern websites and web apps built with Next.js — optimised for search engines, performance and conversions.", icon: <Monitor size={20} /> },
+        { no: "02", title: "Mobile apps", desc: "Cross-platform iOS and Android apps using React Native and Expo — one codebase, two stores, full native feel.", icon: <SmartphoneIcon size={20} /> },
+        { no: "03", title: "APIs & backends", desc: "Scalable REST and real-time APIs built on Node.js and Supabase — secure, documented and ready to integrate.", icon: <PlugIcon size={20} /> },
+        { no: "04", title: "Database design", desc: "Well-structured relational and real-time databases using Supabase and PostgreSQL — built to scale with your business.", icon: <DatabaseIcon size={20} /> },
     ];
 
     return (
-        <section className='grid items-center justify-center text-center py-10'>
+        <section className='grid items-center justify-center text-center py-5'>
             <Title
                 slug='What we do'
                 heading='Everything your business needs to go digital' 
@@ -28,8 +28,8 @@ export default function Services() {
             <section className='py-10'>
                 <h3 className='text-sm mb-3'>Not sure what you need? Let`s talk it through — no commitment.</h3>
                 <Link href={'/newsletter'}>
-                    <Button variant={'default'} className={'py-5 px-6'}>
-                        <PhoneIcon className='' />
+                    <Button variant={'default'} className={'py-5.5 px-7'}>
+                        <PhoneIcon />
                         <span className='ml-3 font-medium'>Book a free call</span>
                     </Button>
                 </Link>

@@ -3,13 +3,13 @@ import { ChevronRightIcon, PresentationIcon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
+export const ratings = [
+  { num: "15+", label: "Projects delivered" },
+  { num: "4", label: "Services offered" },
+  { num: "100%", label: "Client satisfaction" }
+];
 export default function Hero() {
-  const ratings = [
-    { num: "15+", label: "Projects delivered" },
-    { num: "4", label: "Services offered" },
-    { num: "100%", label: "Client satisfaction" }
-  ];
-  
+
   return (
     <section className='relative py-[10%]'>
       <section className='relative items-center justify-center gap-12 grid text-center'>
