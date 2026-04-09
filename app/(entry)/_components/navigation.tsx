@@ -2,11 +2,11 @@
 
 import { Button } from '@/components/ui/button';
 import { Images } from '@/lib/assets'
+import { useAuth } from '@clerk/nextjs';
 import { BookOpenTextIcon, ChevronRight, ContactIcon, HomeIcon, LayoutDashboardIcon, LucideNewspaper, WalletIcon } from 'lucide-react';
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
-import React, { useEffect, useRef, useState } from 'react'
 
 export const navLink = [
   {title: "Home", href: "/", icon: <HomeIcon size={18} /> },
@@ -18,7 +18,7 @@ export const navLink = [
 
 export default function Navigation() {
   const pathname = usePathname();
-  const SignedIn = false;
+  const { isSignedIn } = useAuth();
 
   return (
     <header className={`fixed w-[70%] p-2 overflow-hidden duration-200 ease-out left-1/2 -translate-x-1/2 top-3 flex items-center bg-white shadow-2xs justify-between z-50 rounded-full`}>
@@ -42,7 +42,7 @@ export default function Navigation() {
         })}
       </nav>
       <div className='flex gap-3'>
-        {!SignedIn ? 
+        {!isSignedIn ?
           <>
             <Link href={'/auth/sign-up'}>
               <Button variant={'ghost'} className='py-4.5'>
